@@ -35,7 +35,7 @@ address {
   text-decoration: none;
 }
 
-.visually-hidden {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -59,7 +59,7 @@ address {
   --basement-color: #2f303a;
 }
 
-.footer-btn, .join-icons-link, .join-icons, .regular-link, .regular-list, .command-icons-link, .command-icons, .types-list__text, .advantages__card-set, .privacy-text, .modal-close {
+.footer-btn, .join-icons-link, .join-icons, .regular-link, .regular-list, .command-icons-link, .command-icons, .examples__text, .advantages__cards, .privacy-text, .modal-close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +97,7 @@ address {
   letter-spacing: 0.03em;
 }
 
-.logo-style {
+.logo__style {
   color: var(--accent-color);
 }
 
@@ -425,7 +425,7 @@ address {
   color: var(--secondary-color);
 }
 
-.advantages__card-set {
+.advantages__cards {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -437,16 +437,16 @@ address {
   padding-bottom: 94px;
 }
 
-.types-list {
+.examples {
   display: flex;
   gap: 30px;
 }
 
-.types-list__type {
+.examples__type {
   position: relative;
 }
 
-.types-list__text {
+.examples__text {
   position: absolute;
   bottom: 0;
   left: 0;
