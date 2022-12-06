@@ -1,0 +1,26 @@
+.advantages__list {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+  @include font(700, 14px, 1.14, 0.03em);
+  width: 270px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.advantages__text {
+  @include font(400, 14px, 1.71, 0.03em);
+  color: var(--secondary-color);
+}
+
+.advantages__card-set {
+  margin-bottom: 30px;
+  @extend %center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+}

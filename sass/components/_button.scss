@@ -1,0 +1,12 @@
+.button {
+  font-family: "Roboto";
+  @include font(700, 16px, 1.88, 0.06em);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: var(--accent-color);
+  color: #ffffff;
+  &:active {
+    background-color: #188ce8;
+  }
+}

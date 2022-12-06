@@ -1,0 +1,30 @@
+.projects-company {
+  border-top: 1px solid #eeeeee;
+}
+
+.projects-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
+  @include font(500, 16px, 1.62, 0.03em);
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.btn-projects {
+  cursor: pointer;
+  background-color: var(--background-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  @include font(500, 16px, 1.62, 0.03em);
+  transition: color, background-color, box-shadow,
+    250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
