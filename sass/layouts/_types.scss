@@ -1,5 +1,18 @@
 .types {
-  padding-bottom: 94px;
+  // padding-bottom: 94px;
+  padding-top: 0;
+
+  @include mobile {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+}
+
+.types__title {
+  margin-bottom: 50px;
 }
 
 .examples {

@@ -1,0 +1,112 @@
+.mobile-menu-btn {
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  top: 0;
+  position: fixed;
+  z-index: 1;
+
+  > .mobile-menu__container {
+    height: 100%;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.mobile-menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-nav__link {
+  margin-bottom: 32px;
+  @include font(500, 40px, 1.18, 0.02em);
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.mobile-menu-nav__link--active {
+  color: var(--accent-color);
+}
+
+.mobile-contact {
+  margin-bottom: 64px;
+}
+
+.mobile-contact__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-contact__tel {
+  @include font(500, 34px, 1.18, 0.02em);
+  color: var(--accent-color);
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    @include font(500, 25px, 1.6, 0.02em);
+  }
+}
+
+.mobile-contact__mail {
+  @include font(500, 24px, 1.17, 0.02em);
+  color: var(--secondary-color);
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    @include font(500, 22px, 1.27, 0.02em);
+  }
+}
+
+.mobile-social {
+  display: flex;
+}
+
+.mobile-social__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__link {
+  @include font(500, 18px, 1.22, 0.02em);
+  color: var(--accent-color);
+  text-decoration: none;
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    @include font(500, 12px, 1.83, 0.02em);
+  }
+}
+
+.mobile-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  @extend %center;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-close__icon {
+  fill: var(--accent-color);
+}
