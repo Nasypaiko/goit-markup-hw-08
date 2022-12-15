@@ -1,7 +1,4 @@
 .logo {
-  font-family: "Raleway";
-  @include font(700, 26px, 1.19, 0.03em);
-
   margin-right: auto;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -15,10 +12,12 @@
   @include desktop {
     margin-right: 93px;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
   }
 }
 
-.logo__style {
-  color: var(--accent-color);
+.section-logo {
+  font-family: "Raleway";
+  @include font(700, 24px, 1.17, 0.03em);
+  color: var(--logo-color);
 }

@@ -1,27 +1,32 @@
-@import './base/common';
-@import './base/reset';
+@import "./base/common";
+@import "./base/reset";
 
-@import './utils/hide';
-@import './utils/vars';
-@import './utils/mixins';
-@import './utils/placeholders';
+@import "./components/button";
+@import "./components/container";
+@import "./components/icons";
+@import "./components/link";
+@import "./components/logo";
+@import "./components/mobile-menu";
+@import "./components/modal";
+@import "./components/section";
+@import "./components/title";
 
-@import './components/button';
-@import './components/container';
-@import './components/logo';
-@import './components/modal';
-@import './components/section';
-@import './components/title';
+@import "./layouts/advantages";
+@import "./layouts/command";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/projects-company";
+@import "./layouts/projects";
+@import "./layouts/regular-customers";
+
+@import "./utils/hidden";
+@import "./utils/mixins";
+@import "./utils/placehoders";
+@import "./utils/vars";
 
 
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/advantages';
-@import './layouts/types';
-@import './layouts/command';
-@import './layouts/regular';
-@import './layouts/footer';
 
-@import './layouts/projects';
-@import './layouts/team';
+
+
 

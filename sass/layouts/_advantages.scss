@@ -6,6 +6,7 @@
 
 .advantages__item {
   width: 100%;
+
   &:last-child {
     margin-right: 0;
   }
@@ -23,13 +24,14 @@
   }
 }
 
-.advantages__cards {
-  margin-bottom: 30px;
+.advantages__card-set {
   @extend %center;
+  margin-bottom: 30px;
   width: 100%;
+  // width: 270px;
   height: 120px;
+  background-color: var(--advantages-background-color);
   border-radius: 4px;
-  background: #f5f4fa;
 }
 
 .advantages__title {
@@ -45,7 +47,6 @@
 }
 
 .advantages__text {
-  @include font(400, 14px, 1.71, 0.03em);
+  @include font(null, 14px, 1.71, 0.03em);
   color: var(--secondary-color);
 }
-
