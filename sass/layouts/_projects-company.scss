@@ -34,7 +34,7 @@
   border-radius: 4px;
   border: none;
   color: var(--primary-color);
-  background-color: #f5f4fa;
+  background-color: var(--advantage-background-color);
   font-family: "Roboto";
   @include font(500, 16px, 1.62, 0.03em);
 
@@ -107,12 +107,12 @@
 
 .team-projects__image {
   display: block;
-  background-color: var(--background-color);
+  background-color: #ffffff;
 }
 
 .team-projects__text {
   @include font(400, 18px, 1.56, 0.03em);
-  color: var(--main-btn-color);
+  color: #ffffff;
 
   position: absolute;
   top: 0;
@@ -139,13 +139,13 @@
 .team-projects__title {
   margin: 0;
   margin-bottom: 4px;
-  @include font(null, 18px, 2, 0.06em);
+  @include font(700, 18px, 2, 0.06em);
   color: var(--primary-color);
 }
 
 .team-projects__category {
   display: inline-block;
   margin: 0;
-  @include font(null, 16px, 1.88, 0.03em);
+  @include font(400, 16px, 1.88, 0.03em);
   color: var(--secondary-color);
 }

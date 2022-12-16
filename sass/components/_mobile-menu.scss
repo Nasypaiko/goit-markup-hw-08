@@ -105,10 +105,10 @@
   @extend %center;
   border: none;
   background-color: transparent;
-    &:hover,
-      &:focus .modal-close__icon {
-        fill: var(--accent-color);
-      }
+  &:hover,
+  &:focus .modal-close__icon {
+    fill: var(--accent-color);
+  }
 }
 
 .mobile-close__icon {

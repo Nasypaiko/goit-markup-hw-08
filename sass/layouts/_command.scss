@@ -50,7 +50,7 @@
 }
 
 .employees-list__position {
-  @include font(null, 16px, 1.18, 0.03em);
+  @include font(400, 16px, 1.18, 0.03em);
   text-align: center;
   color: var(--secondary-color);
 }
@@ -82,7 +82,7 @@
   &:hover,
   &:focus {
     background-color: var(--accent-color);
-    fill: var(--main-btn-color);
+    fill: #ffffff;
     outline: 0px;
   }
 }

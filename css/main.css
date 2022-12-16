@@ -88,7 +88,6 @@ img {
   --background-secondary-color: #2f303a;
   --background-portfolio-color: #ececec;
   --advantages-background-color: #f5f4fa;
-  --main-btn-color: #ffffff;
   --border-color: #eeeeee;
   --modal-btn-color: #188ce8;
   --gradient-hero: linear-gradient(
@@ -321,6 +320,7 @@ img {
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
+  z-index: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -358,7 +358,7 @@ img {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background: var(--main-btn-color);
+  background: var(--background-color);
   position: absolute;
   right: 8px;
   top: 8px;
@@ -508,7 +508,7 @@ img {
 .modal__privacy-check:checked + .modal__privacy-text div {
   background-color: var(--accent-color);
   border-color: transparent;
-  fill: var(--background-color);
+  fill: #ffffff;
 }
 .modal__privacy-check:focus + .modal__privacy-text div {
   border-color: var(--accent-color);
@@ -545,6 +545,7 @@ img {
 }
 
 .section-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -605,6 +606,7 @@ img {
 }
 
 .advantages__text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -667,6 +669,7 @@ img {
 }
 
 .employees-list__position {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -697,7 +700,7 @@ img {
 }
 .employees-icons__link:hover, .employees-icons__link:focus {
   background-color: var(--accent-color);
-  fill: var(--main-btn-color);
+  fill: #ffffff;
   outline: 0px;
 }
 
@@ -753,7 +756,7 @@ img {
 }
 
 .address__logo {
-  color: var(--background-color);
+  color: #ffffff;
 }
 
 .address__style {
@@ -766,9 +769,11 @@ img {
 
 .contacts-basement__google {
   margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--background-color);
+  color: #ffffff;
 }
 
 .contacts-basement__list {
@@ -779,6 +784,8 @@ img {
 }
 
 .contacts-basement__link {
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -808,7 +815,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--background-color);
+  color: #ffffff;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -837,7 +844,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--main-btn-color);
+  color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons__link:hover, .social-icons__link:focus {
@@ -847,7 +854,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .basement__mailing {
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -859,7 +866,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--background-color);
+  color: #ffffff;
 }
 @media screen and (min-width: 1200px) {
   .mailing__title {
@@ -934,7 +941,7 @@ img {
 
 .basement-form__icon {
   margin-left: 10px;
-  fill: var(--background-color);
+  fill: #ffffff;
 }
 @media screen and (min-width: 1200px) {
   .basement-form__icon {
@@ -1149,7 +1156,7 @@ img {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--background-color);
+  color: #ffffff;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1166,7 +1173,7 @@ img {
   border-radius: 4px;
 }
 .hero__btn:active {
-  background-color: #188ce8;
+  background-color: var(--modal-btn-color);
 }
 
 .projects-company {
@@ -1206,7 +1213,7 @@ img {
   border-radius: 4px;
   border: none;
   color: var(--primary-color);
-  background-color: #f5f4fa;
+  background-color: var(--advantage-background-color);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -1275,7 +1282,7 @@ img {
 
 .team-projects__image {
   display: block;
-  background-color: var(--background-color);
+  background-color: #ffffff;
 }
 
 .team-projects__text {
@@ -1283,7 +1290,7 @@ img {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--main-btn-color);
+  color: #ffffff;
   position: absolute;
   top: 0;
   padding: 63px 24px;
@@ -1307,6 +1314,7 @@ img {
 .team-projects__title {
   margin: 0;
   margin-bottom: 4px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -1316,6 +1324,7 @@ img {
 .team-projects__category {
   display: inline-block;
   margin: 0;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -1359,7 +1368,7 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
-  color: var(--main-btn-color);
+  color: #ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
