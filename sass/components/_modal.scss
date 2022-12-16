@@ -49,13 +49,17 @@
   @extend %center;
   cursor: pointer;
 
-  &:focus {
+  &:active {
+    background-color: #ebebeb;
+  }
+
+  &:hover,
+  &:focus .modal__close-icon {
     fill: var(--accent-color);
   }
 }
 
 .modal__close-icon {
-  fill: var(--primary-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

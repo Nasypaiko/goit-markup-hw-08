@@ -1,6 +1,11 @@
 @import "./base/common";
 @import "./base/reset";
 
+@import "./utils/hidden";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/vars";
+
 @import "./components/button";
 @import "./components/container";
 @import "./components/icons";
@@ -19,8 +24,3 @@
 @import "./layouts/projects-company";
 @import "./layouts/projects";
 @import "./layouts/regular-customers";
-
-@import "./utils/hidden";
-@import "./utils/mixins";
-@import "./utils/placehoders";
-@import "./utils/vars";
