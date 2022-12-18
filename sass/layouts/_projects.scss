@@ -11,7 +11,10 @@
 }
 
 .projects__title {
-  margin-bottom: 50px;
+  @include desktop {
+    margin-bottom: 50px;
+    @include font(700, 36px, 1.16, 0.03em);
+  }
 }
 
 .pic-list {

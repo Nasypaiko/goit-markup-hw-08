@@ -146,6 +146,10 @@
     padding-bottom: 0;
     @include font(500, 12px, 1.16, 0.02em);
   }
+
+  @include desktop {
+    @include font(500, 14px, 1.14, 0.02em);
+  }
 }
 
 .contact__icon {
