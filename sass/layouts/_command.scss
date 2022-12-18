@@ -5,6 +5,10 @@
 .command__title {
   margin-bottom: 50px;
   text-align: center;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
 }
 
 .employees-list {

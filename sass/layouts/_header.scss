@@ -144,6 +144,7 @@
   @include tablet {
     padding-top: 0;
     padding-bottom: 0;
+    @include font(500, 12px, 1.16, 0.02em);
   }
 }
 

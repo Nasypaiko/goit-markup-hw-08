@@ -1,5 +1,9 @@
 .regular-customers__title {
   margin-bottom: 50px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
 }
 
 .company-list {
